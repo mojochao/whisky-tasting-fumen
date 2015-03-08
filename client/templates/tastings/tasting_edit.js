@@ -16,7 +16,7 @@ Template.tastingEdit.events({
     Tastings.update(currentTastingId, {$set: tastingProperties}, function (err) {
       if (err) {
         // display the error to the user
-        alert(err.reason);
+        throwError(err.reason);
       } else {
         Router.go('tastingPage', {
           _id: currentTastingId
