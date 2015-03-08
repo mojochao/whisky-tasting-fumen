@@ -36,3 +36,7 @@ Template.tastingEdit.events({
   }
 
 });
+
+Template.tastingEdit.rendered = function() {
+  $('.datetimepicker').datetimepicker();
+};
