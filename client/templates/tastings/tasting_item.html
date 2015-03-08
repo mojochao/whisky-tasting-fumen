@@ -1,0 +1,12 @@
+<template name="tastingItem">
+  <div class="tasting">
+    <div class="tasting-content">
+      <h3>{{when}}</h3>
+      <h4>{{bottle}}, {{liquor}}</h4>
+      <p>{{teaser}}</p>
+      <hr>
+      <h5>Tasting hosted by {{host}}.</h5>
+    </div>
+    <a href="{{pathFor 'tastingPage'}}" class="discuss btn btn-default">Go</a>
+  </div>
+</template>
