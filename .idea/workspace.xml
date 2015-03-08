@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c66059c2-39f4-4318-a3af-b205187ff479" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/application/header.html" afterPath="$PROJECT_DIR$/client/templates/application/header.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/collections/comments.js" afterPath="$PROJECT_DIR$/lib/collections/comments.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/publications.js" afterPath="$PROJECT_DIR$/server/publications.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/router.js" afterPath="$PROJECT_DIR$/lib/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/tastings/tasting_edit.js" afterPath="$PROJECT_DIR$/client/templates/tastings/tasting_edit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/tastings/tasting_item.html" afterPath="$PROJECT_DIR$/client/templates/tastings/tasting_item.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/tastings/tasting_item.js" afterPath="$PROJECT_DIR$/client/templates/tastings/tasting_item.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/tastings/tasting_page.html" afterPath="$PROJECT_DIR$/client/templates/tastings/tasting_page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/collections/tastings.js" afterPath="$PROJECT_DIR$/lib/collections/tastings.js" />
     </list>
     <ignored path="drunken-fumen.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,28 +33,28 @@
       <file leaf-file-name="publications.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/publications.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="comments.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="comments.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/collections/comments.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6802721" vertical-offset="0" max-vertical-offset="480">
-              <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="28" max-vertical-offset="585">
+              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tasting_item.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="tasting_item.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/templates/tastings/tasting_item.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.111111" vertical-offset="0" max-vertical-offset="255">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.12765957" vertical-offset="0" max-vertical-offset="470">
+              <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -65,8 +63,8 @@
       <file leaf-file-name="router.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="885">
-              <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -85,8 +83,8 @@
       <file leaf-file-name="tastings.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/collections/tastings.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="100" max-vertical-offset="855">
-              <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="223" max-vertical-offset="870">
+              <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -158,26 +156,26 @@
         <option value="$PROJECT_DIR$/client/templates/tastings/tasting_submit.html" />
         <option value="$PROJECT_DIR$/client/templates/tastings/tasting_edit.html" />
         <option value="$PROJECT_DIR$/lib/permissions.js" />
-        <option value="$PROJECT_DIR$/lib/collections/tastings.js" />
         <option value="$PROJECT_DIR$/client/templates/application/layout.html" />
         <option value="$PROJECT_DIR$/client/templates/application/errors.html" />
         <option value="$PROJECT_DIR$/client/collections/errors.js" />
         <option value="$PROJECT_DIR$/client/helpers/errors.js" />
         <option value="$PROJECT_DIR$/client/templates/tastings/tasting_submit.js" />
         <option value="$PROJECT_DIR$/client/templates/application/errors.js" />
-        <option value="$PROJECT_DIR$/server/publications.js" />
-        <option value="$PROJECT_DIR$/lib/router.js" />
         <option value="$PROJECT_DIR$/client/templates/application/header.html" />
         <option value="$PROJECT_DIR$/client/templates/tastings/tasting_edit.js" />
         <option value="$PROJECT_DIR$/client/templates/tastings/tasting_page.js" />
         <option value="$PROJECT_DIR$/client/templates/comments/comment_item.html" />
         <option value="$PROJECT_DIR$/client/templates/comments/comment_item.js" />
         <option value="$PROJECT_DIR$/client/templates/tastings/tasting_item.html" />
-        <option value="$PROJECT_DIR$/client/templates/tastings/tasting_item.js" />
         <option value="$PROJECT_DIR$/client/templates/tastings/tasting_page.html" />
         <option value="$PROJECT_DIR$/client/templates/comments/comment_submit.html" />
         <option value="$PROJECT_DIR$/client/templates/comments/comment_submit.js" />
+        <option value="$PROJECT_DIR$/lib/router.js" />
+        <option value="$PROJECT_DIR$/server/publications.js" />
+        <option value="$PROJECT_DIR$/lib/collections/tastings.js" />
         <option value="$PROJECT_DIR$/lib/collections/comments.js" />
+        <option value="$PROJECT_DIR$/client/templates/tastings/tasting_item.js" />
       </list>
     </option>
   </component>
@@ -301,7 +299,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="enabled" />
     <property name="js.meteor.project" value="true" />
     <property name="js.meteor.library.was.enabled" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="comments.js&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/lib/collections/comments.js&#10;commsubjs&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/comments/comment_submit.js&#10;commsub&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/comments/comment_submit.html&#10;tasting&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tasting_page.html&#10;fix&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/server/fixtures.js&#10;tasitem&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tasting_item.js&#10;tasting_item&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tasting_item.html&#10;comment&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/comments/comment_item.js&#10;commentitem&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/comments/comment_item.html&#10;tastpage&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tasting_page.js&#10;tasting_page&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tasting_page.html&#10;outer&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/lib/router.js&#10;publi&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/server/publications.js&#10;tasting_sub&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tasting_submit.js&#10;header&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/application/header.html&#10;comments&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/lib/collections/comments.js&#10;router&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/lib/router.js&#10;public&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/server/publications.js&#10;errors.js&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/application/errors.js&#10;tasting_edit&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tasting_edit.js&#10;error&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/helpers/errors.js&#10;errors&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/collections/errors.js&#10;errors.html&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/application/errors.html&#10;layout&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/application/layout.html&#10;errors.j&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/collections/errors.js&#10;tastings.js&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/lib/collections/tastings.js&#10;permis&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/lib/permissions.js&#10;tasting_item.js&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tasting_item.js&#10;tasting_it&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tasting_item.html&#10;tastingsubmi&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tasting_submit.js&#10;tasting_ed&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tasting_edit.js&#10;submit&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tasting_submit.html&#10;tastinged&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tasting_edit.html&#10;item&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tasting_item.html&#10;route&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/lib/router.js&#10;tas&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tasting_page.html&#10;tastings_li&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tastings_list.js&#10;tastings.j&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/lib/collections/tastings.js&#10;acces&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/application/access_denied.html&#10;tast&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tasting_submit.js&#10;css&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/stylesheets/style.css&#10;foo&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/application/footer.html&#10;styl&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/stylesheets/style.css&#10;foot&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/application/footer.html&#10;style&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/stylesheets/style.css&#10;footer&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/application/footer.html&#10;layo&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/application/layout.html&#10;tassub&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tasting_submit.js&#10;config&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/config.js&#10;layou&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/application/layout.html" />
+    <property name="SearchEverywhereHistoryKey" value="tasting_item&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tasting_item.js&#10;comments.js&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/lib/collections/comments.js&#10;tastings&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/lib/collections/tastings.js&#10;public&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/server/publications.js&#10;router&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/lib/router.js&#10;commsubjs&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/comments/comment_submit.js&#10;commsub&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/comments/comment_submit.html&#10;tasting&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tasting_page.html&#10;fix&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/server/fixtures.js&#10;tasitem&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tasting_item.js&#10;comment&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/comments/comment_item.js&#10;commentitem&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/comments/comment_item.html&#10;tastpage&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tasting_page.js&#10;tasting_page&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tasting_page.html&#10;outer&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/lib/router.js&#10;publi&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/server/publications.js&#10;tasting_sub&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tasting_submit.js&#10;header&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/application/header.html&#10;comments&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/lib/collections/comments.js&#10;errors.js&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/application/errors.js&#10;tasting_edit&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tasting_edit.js&#10;error&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/helpers/errors.js&#10;errors&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/collections/errors.js&#10;errors.html&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/application/errors.html&#10;layout&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/application/layout.html&#10;errors.j&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/collections/errors.js&#10;tastings.js&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/lib/collections/tastings.js&#10;permis&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/lib/permissions.js&#10;tasting_item.js&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tasting_item.js&#10;tasting_it&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tasting_item.html&#10;tastingsubmi&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tasting_submit.js&#10;tasting_ed&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tasting_edit.js&#10;submit&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tasting_submit.html&#10;tastinged&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tasting_edit.html&#10;item&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tasting_item.html&#10;route&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/lib/router.js&#10;tas&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tasting_page.html&#10;tastings_li&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tastings_list.js&#10;tastings.j&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/lib/collections/tastings.js&#10;acces&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/application/access_denied.html&#10;tast&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tasting_submit.js&#10;css&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/stylesheets/style.css&#10;foo&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/application/footer.html&#10;styl&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/stylesheets/style.css&#10;foot&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/application/footer.html&#10;style&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/stylesheets/style.css&#10;footer&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/application/footer.html&#10;layo&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/application/layout.html&#10;tassub&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/templates/tastings/tasting_submit.js&#10;config&#9;FILE&#9;file:///Users/agooch/Projects/drunken-fumen/client/config.js" />
     <property name="FullScreen" value="false" />
     <property name="LayoutCode.rearrangeEntriesSpacebars" value="false" />
   </component>
@@ -636,50 +634,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/tastings/tasting_item.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.111111" vertical-offset="0" max-vertical-offset="255">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="885">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/permissions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/fixtures.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/publications.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/collections/tastings.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="100" max-vertical-offset="855">
-          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -708,10 +666,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/collections/tastings.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="223" max-vertical-offset="870">
+          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/fixtures.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/publications.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/collections/comments.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6802721" vertical-offset="0" max-vertical-offset="480">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="28" max-vertical-offset="585">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/tastings/tasting_item.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12765957" vertical-offset="0" max-vertical-offset="470">
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
           <folding />
         </state>
       </provider>
