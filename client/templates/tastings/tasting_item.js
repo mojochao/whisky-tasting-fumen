@@ -1,6 +1,6 @@
 Template.tastingItem.helpers({
 
-  owns: function() {
+  isOwner: function() {
     return this.userId === Meteor.userId();
   }
 
