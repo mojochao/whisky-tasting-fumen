@@ -26,6 +26,18 @@ Template.tastingSubmit.events({
 
 });
 
+Template.tastingSubmit.helpers({
+
+  guessNextWhen: function () {
+    return moment()
+      .day(3)
+      .hour(18)
+      .minute(0)
+      .format('MM/DD/YYYY h:mm A');
+  }
+
+});
+
 Template.tastingSubmit.rendered = function() {
   $('.datetimepicker').datetimepicker();
 };

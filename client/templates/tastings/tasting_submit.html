@@ -1,30 +1,30 @@
 <template name="tastingSubmit">
   <form class="main form page">
     <div class="form-group">
-      <label class="control-label" for="when">When</label>
-      <div class="controls">
-        <div class="input-group datetimepicker">
-          <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-          <input name="when" id="when" type="text" value="" placeholder="Date and time of tasting" class="form-control set-due-date"/>
-        </div>
-      </div>
-    </div>
-    <div class="form-group">
       <label class="control-label" for="where">Where</label>
       <div class="controls">
         <input name="where" id="where" type="text" value="Heroes & Legacies" placeholder="Location of tasting" class="form-control"/>
       </div>
     </div>
     <div class="form-group">
-      <label class="control-label" for="liquor">Liquor</label>
+      <label class="control-label" for="when">When</label>
       <div class="controls">
-        <input name="liquor" id="liquor" type="text" value="" placeholder="Liquor being tasted" class="form-control"/>
+        <div class="input-group datetimepicker">
+          <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+          <input name="when" id="when" type="text" value="{{guessNextWhen}}" placeholder="{{guessNextWhen}}" class="form-control set-due-date"/>
+        </div>
       </div>
     </div>
     <div class="form-group">
       <label class="control-label" for="bottle">Bottle</label>
       <div class="controls">
         <input name="bottle" id="bottle" type="text" value="" placeholder="Bottle being tasted" class="form-control"/>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label" for="liquor">Liquor</label>
+      <div class="controls">
+        <input name="liquor" id="liquor" type="text" value="" placeholder="Liquor being tasted" class="form-control"/>
       </div>
     </div>
     <div class="form-group">
