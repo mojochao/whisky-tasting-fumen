@@ -12,16 +12,18 @@
       </div>
       <div class="collapse navbar-collapse" id="navigation">
         <ul class="nav navbar-nav">
-          <li>
-            <a href="{{pathFor 'tastingsFuture'}}">Upcoming Tastings</a>
-          </li>
-          <li>
-            <a href="{{pathFor 'tastingsPast'}}">Recent Tastings</a>
-          </li>
           {{#if currentUser}}
             <li>
-              <a href="{{pathFor 'tastingSubmit'}}">Add Tasting</a>
+              <a href="{{pathFor 'tastingSubmit'}}">Create</a>
             </li>
+          {{/if}}
+          <li>
+            <a href="{{pathFor 'tastingsFuture'}}">Upcoming</a>
+          </li>
+          <li>
+            <a href="{{pathFor 'tastingsPast'}}">Recent</a>
+          </li>
+          {{#if currentUser}}
             <li class="dropdown">
               {{> notifications}}
             </li>
