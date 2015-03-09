@@ -1,7 +1,24 @@
 <template name="tastingsList">
   <div class="tastings">
     {{#each tastings}}
-      {{> tastingItem}}
+      {{> tastingsListItem}}
     {{/each}}
+  </div>
+</template>
+
+<template name="tastingsListItem">
+  <div class="tasting">
+    <div class="tasting-content">
+      <h3>{{when}}</h3>
+      <h4>{{bottle}}, {{liquor}}</h4>
+      <p>{{teaser}}</p>
+      <hr>
+      <p>
+      <h5>Tasting hosted by {{host}}</h5>
+      <p><a href="{{pathFor 'tastingPage'}}">{{commentsCount}} comments</a></p>
+      <p><a href="{{pathFor 'tastingPage'}}">{{participationsCount}} participants</a></p>
+      </p>
+    </div>
+    <a href="{{pathFor 'tastingPage'}}" class="discuss btn btn-default">Go</a>
   </div>
 </template>
