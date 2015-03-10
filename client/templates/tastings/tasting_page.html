@@ -1,5 +1,6 @@
 <template name="tastingPage">
   <div class="tasting-page page">
+    <h4>Tasting</h4>
     <div class="tasting">
       <div class="tasting-content">
         <h4>{{bottle}}, {{liquor}}</h4>
@@ -14,6 +15,15 @@
       {{/if}}
     </div>
 
+    <!--<h4>Guests</h4>-->
+    <!--{{> rsvp}}-->
+    <!--<ul class="comments">-->
+      <!--{{#each participations}}-->
+        <!--{{> participationItem}}-->
+      <!--{{/each}}-->
+    <!--</ul>-->
+
+    <h4>Comments</h4>
     <ul class="comments">
       {{#each comments}}
         {{> commentItem}}
