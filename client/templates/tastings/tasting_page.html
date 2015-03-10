@@ -6,11 +6,12 @@
         <p>{{teaser}}</p>
         <hr>
         <p>
-        <h5>{{whenFormatted}}</h5>
-        <h5>Tasting hosted by {{host}}</h5>
+        Hosted by <strong>{{host}}</strong> at {{whenFormatted}} at {{where}}.
         </p>
       </div>
-      {{#if isOwner}}<p><a href="{{pathFor 'tastingEdit'}}" class="discuss btn btn-primary">Edit</a></p>{{/if}}
+      {{#if isOwner}}
+        <p><a href="{{pathFor 'tastingEdit'}}" class="discuss btn btn-primary">Edit Tasting</a></p>
+      {{/if}}
     </div>
 
     <ul class="comments">
