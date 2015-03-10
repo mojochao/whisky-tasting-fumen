@@ -1,5 +1,11 @@
 Template.tastingsFuture.helpers({
+
   tastings: function () {
-    return Tastings.find({}, {sort: {submitted: -1}});
+    return Tastings.find({when: {'$gte': new Date()}});
+  },
+
+  noTastings: function () {
+    return Tastings.find({when: {'$gte': new Date()}}).count() === 0;
   }
+
 });

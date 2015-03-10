@@ -5,4 +5,12 @@
       {{> tastingsItem}}
     {{/each}}
   </div>
+  {{#if noTastings}}
+    <p>No tastings have occurred yet.</p>
+    {{#if currentUser}}
+      <p>Schedule a <a href="{{pathFor 'tastingSubmit'}}">new tasting</a> and start the ball rolling.</p>
+    {{else}}
+      <p>Sign in or join to start the ball rolling.</p>
+    {{/if}}
+  {{/if}}
 </template>
