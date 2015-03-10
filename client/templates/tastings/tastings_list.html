@@ -6,12 +6,12 @@
     {{/each}}
   </div>
   {{#if noTastings}}
-  <p>No tastings scheduled for this week.</p>
-  <p>Check the <a href="{{pathFor 'tastingsFuture'}}">upcoming tastings</a> for future events.</p>
+  <p>No tastings are scheduled for this week.</p>
+  <p>Check out some <a href="{{pathFor 'tastingsFuture'}}">upcoming</a> or <a href="{{pathFor 'tastingsPast'}}">recent</a> tastings.</p>
     {{#if currentUser}}
       <p>Schedule a <a href="{{pathFor 'tastingSubmit'}}">new tasting</a> and share with some friends.</p>
     {{else}}
-      <p>Sign in or join to start sharing with some friends.</p>
+      <p>Sign in or join to schedule a tasting and start sharing with some friends.</p>
     {{/if}}
   {{/if}}
 </template>
