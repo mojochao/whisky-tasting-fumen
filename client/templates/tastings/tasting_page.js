@@ -8,6 +8,8 @@ Template.tastingPage.helpers({
 
   isOwner: function() {
     return this.userId === Meteor.userId();
-  }
+  },
+
+  whenFormatted: whenFormatted
 
 });

@@ -2,12 +2,12 @@
   <div class="tasting-page page">
     <div class="tasting">
       <div class="tasting-content">
-        <h3>{{when}}</h3>
         <h4>{{bottle}}, {{liquor}}</h4>
         <p>{{teaser}}</p>
         <hr>
         <p>
-        <h5>Tasting hosted by {{host}}.</h5>
+        <h5>{{whenFormatted}}</h5>
+        <h5>Tasting hosted by {{host}}</h5>
         </p>
       </div>
       {{#if isOwner}}<p><a href="{{pathFor 'tastingEdit'}}" class="discuss btn btn-primary">Edit</a></p>{{/if}}
