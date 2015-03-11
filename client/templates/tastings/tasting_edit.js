@@ -8,7 +8,6 @@ Template.tastingEdit.events({
     var tastingProperties = {
       when: moment($(evt.target).find('[name=when]').val()).toDate(),
       where: $(evt.target).find('[name=where]').val(),
-      liquor: $(evt.target).find('[name=liquor]').val(),
       bottle: $(evt.target).find('[name=bottle]').val(),
       teaser: $(evt.target).find('[name=teaser]').val()
     };
