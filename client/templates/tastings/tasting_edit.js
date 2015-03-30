@@ -9,6 +9,7 @@ Template.tastingEdit.events({
       when: moment($(evt.target).find('[name=when]').val()).toDate(),
       where: $(evt.target).find('[name=where]').val(),
       bottle: $(evt.target).find('[name=bottle]').val(),
+      spirit: $(evt.target).find('[name=spirit]').val(),
       teaser: $(evt.target).find('[name=teaser]').val()
     };
 
@@ -27,7 +28,7 @@ Template.tastingEdit.events({
   'click .delete': function (evt) {
     evt.preventDefault();
 
-    if (confirm("Delete this tasting?")) {
+    if (confirm('Delete this tasting?')) {
       var currentTastingId = this._id;
       Tastings.remove(currentTastingId);
       Router.go('tastingsList');

@@ -9,6 +9,7 @@ Template.tastingSubmit.events({
       when: $(evt.target).find('[name=when]').val(),
       where: $(evt.target).find('[name=where]').val(),
       bottle: $(evt.target).find('[name=bottle]').val(),
+      spirit: $(evt.target).find('[name=spirit]').val(),
       teaser: $(evt.target).find('[name=teaser]').val()
     };
 
