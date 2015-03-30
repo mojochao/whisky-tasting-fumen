@@ -3,6 +3,9 @@
     <h4>Tasting</h4>
     <div class="tasting">
       <div class="tasting-content">
+        {{#if isOwner}}
+          <p><a href="{{pathFor 'tastingEdit'}}" class="discuss btn btn-primary">Edit Tasting</a></p>
+        {{/if}}
         <h4>{{bottle}}</h4>
         <p>{{teaser}}</p>
         <hr>
@@ -10,9 +13,6 @@
         Hosted by <strong>{{host}}</strong> on {{whenFormatted}} at {{where}}.
         </p>
       </div>
-      {{#if isOwner}}
-        <p><a href="{{pathFor 'tastingEdit'}}" class="discuss btn btn-primary">Edit Tasting</a></p>
-      {{/if}}
     </div>
 
     <h4>Comments</h4>
