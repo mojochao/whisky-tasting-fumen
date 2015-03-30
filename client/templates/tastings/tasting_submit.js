@@ -14,12 +14,12 @@ Template.tastingSubmit.events({
     };
 
     // have server side add the tasting object to the collection
-    Meteor.call('tastingInsert', tasting, function(err, result) {
+    Meteor.call('tastingInsert', tasting, function(err, id) {
       if (err) {
         return throwError(err.reason);
       }
       Router.go('tastingPage', {
-        _id: result._id
+        _id: id
       });
     });
   }
