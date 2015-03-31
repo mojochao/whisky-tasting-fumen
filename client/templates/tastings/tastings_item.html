@@ -1,18 +1,16 @@
 <template name="tastingsItem">
-  <div class="tasting tastings-item-select">
+  <article class="tasting tastings-item-select">
     <div class="tasting-content">
-      <h3>{{whenFormatted}}</h3>
-      <h5>{{where}}</h5>
-      <hr>
-      <h4>{{bottle}}</h4>
-      <h3>{{spirit}}</h3>
+      <h4>{{bottle}}, {{spirit}}</h4>
       <p>{{teaser}}</p>
       <hr>
-      <p>
-      <h5>Tasting hosted by {{host}}</h5>
+      <h5>Tasting hosted by <strong>{{host}}</strong> on {{whenFormatted}} at {{where}}</h5>
+      <hr>
       <p>{{commentsCount}} comments</p>
-      </p>
+      <p>{{ratingsCount}} ratings</p>
+      {{#if rating}}
+      <div class="rateit" data-rateit-value="{{rating}}" data-rateit-ispreset="true" data-rateit-readonly="true"></div>
+      {{/if}}
     </div>
-    <!--<a href="{{pathFor 'tastingPage'}}" class="discuss btn btn-default">Go</a>-->
-  </div>
+  </article>
 </template>
