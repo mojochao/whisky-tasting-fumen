@@ -1,0 +1,12 @@
+<template name="ratingSubmit">
+  <form name="rating" class="form">
+    <div class="form-group {{errorClass 'body'}}">
+      <div class="controls">
+        <label for="score">Rate this Tasting</label>
+        <span class="rateit" name="score" id="score" data-rateit-resetable="false"></span>
+      </div>
+    </div>
+    <button type="reset" id="reset-rating-button">Reset rating</button>
+    <button type="submit" id="add-rating-button">Submit rating</button>
+  </form>
+</template>
