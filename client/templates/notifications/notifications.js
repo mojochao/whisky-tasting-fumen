@@ -18,9 +18,9 @@ Template.notificationItem.helpers({
 
   notificationContent: function () {
     if (this.notificationType === "comment") {
-      return "commented on your tasting."
-    } else if (this.notificationType === "participation"){
-      return "is participating in your tasting."
+      return "commented on your tasting"
+    } else if (this.notificationType === "rating"){
+      return "rated your tasting"
     }
   }
 
