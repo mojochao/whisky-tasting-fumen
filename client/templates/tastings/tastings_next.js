@@ -1,4 +1,4 @@
-Template.tastingsList.helpers({
+Template.tastingsNext.helpers({
 
   tastings: function () {
     var begin = moment().toDate();
