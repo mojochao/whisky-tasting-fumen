@@ -1,4 +1,4 @@
-Template.tastingsItem.helpers({
+Template.tastingItem.helpers({
 
   ratingsAverage: function () {
     return this.ratingsCount === 0 ? null : this.ratingsTotal / this.ratingsCount;
@@ -8,13 +8,13 @@ Template.tastingsItem.helpers({
 
 });
 
-Template.tastingsItem.rendered = function () {
+Template.tastingItem.rendered = function () {
   // at .created() time, it's too early to run rateit(), so run it
   // at .rendered() time.
   this.$('.rateit').rateit();
 };
 
-Template.tastingsItem.events = {
+Template.tastingItem.events = {
 
   'click .tastings-item-select': function () {
     Router.go('tastingPage', {_id: this._id});
