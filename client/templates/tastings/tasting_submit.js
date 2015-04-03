@@ -14,7 +14,7 @@ Template.tastingSubmit.events({
     };
 
     // have server side add the tasting object to the collection
-    Meteor.call('tastingInsert', tasting, function(err, id) {
+    Meteor.call('tastingInsert', tasting, function (err, id) {
       if (err) {
         return throwError(err.reason);
       }
@@ -38,6 +38,6 @@ Template.tastingSubmit.helpers({
 
 });
 
-Template.tastingSubmit.rendered = function() {
+Template.tastingSubmit.rendered = function () {
   $('.datetimepicker').datetimepicker();
 };

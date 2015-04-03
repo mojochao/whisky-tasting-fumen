@@ -1,6 +1,6 @@
 Template.ratingsItem.helpers({
 
-  submittedText: function() {
+  submittedText: function () {
     return this.submitted.toString();
   }
 
