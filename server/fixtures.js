@@ -1,138 +1,157 @@
 // create some test users
 if (Meteor.users.find().count() === 0) {
-  var userIdAllen = Meteor.users.insert({
+  var user1Id = Meteor.users.insert({
     username: 'allen'
   });
-  Accounts.setPassword(userIdAllen, 'password')
-  var userAllen = Meteor.users.findOne(userIdAllen);
+  Accounts.setPassword(user1Id, 'password')
+  var user1 = Meteor.users.findOne(user1Id);
 
-  var userIdDanielle = Meteor.users.insert({
+  var user2Id = Meteor.users.insert({
     username: 'danielle'
   });
-  Accounts.setPassword(userIdDanielle, 'password')
-  var userDanielle = Meteor.users.findOne(userIdDanielle);
+  Accounts.setPassword(user2Id, 'password')
+  var user2 = Meteor.users.findOne(user2Id);
 
-  var userIdWilliam = Meteor.users.insert({
+  var user3Id = Meteor.users.insert({
     username: 'william'
   });
-  Accounts.setPassword(userIdWilliam, 'password')
-  var userWilliam = Meteor.users.findOne(userIdWilliam);
+  Accounts.setPassword(user3Id, 'password')
+  var user3 = Meteor.users.findOne(user3Id);
 
-  var userIdCatherine = Meteor.users.insert({
+  var user4Id = Meteor.users.insert({
     username: 'catherine'
   });
-  Accounts.setPassword(userIdCatherine, 'password')
-  var userCatherine = Meteor.users.findOne(userIdCatherine);
+  Accounts.setPassword(user4Id, 'password')
+  var user4 = Meteor.users.findOne(user4Id);
 }
 
 // create some test tastings
 if (Tastings.find().count() === 0) {
-  var pastTasting1Id = Tastings.insert({
-    userId: userIdAllen,
-    host: userAllen.username,
-    submitted: new Date("2015-03-24T23:00:00Z"),
+  var tasting1Id = Tastings.insert({
+    userId: user1._id,
+    host: user1.username,
+    submitted: new Date('2015-03-29T23:00:00Z'),
     commentsCount: 0,
-    ratingsCount: 2,
-    ratingsTotal: 5,
-    when: new Date("2015-03-25T23:00:00Z"),
+    ratingsCount: 0,
+    ratingsTotal: 0,
+    when: new Date('2015-04-01T23:00:00Z'),
     where: 'Heroes & Legacies',
     bottle: 'Pyrat Reserve',
     spirit: 'Rum',
     teaser: 'Cuz pirates, yo!'
   });
-  var pastTasting1 = Tastings.findOne(pastTasting1Id);
+  var tasting1 = Tastings.findOne(tasting1Id);
 
-  var pastTasting2Id = Tastings.insert({
-    _id: userIdWilliam,
-    host: userWilliam.username,
-    submitted: new Date("2015-03-17T23:00:00Z"),
-    commentsCount: 0,
+  var tasting2Id = Tastings.insert({
+    _id: user3._id,
+    host: user3.username,
+    submitted: new Date('2015-03-30T23:00:00Z'),
+    commentsCount: 2,
     ratingsCount: 0,
     ratingsTotal: 0,
-    when: new Date("2015-03-18T23:00:00Z"),
+    when: new Date('2015-04-01T23:00:00Z'),
     where: 'Heroes & Legacies',
     bottle: 'Grey Goose',
     spirit: 'Vodka',
     teaser: 'Clean and clear'
   });
-  var pastTasting2 = Tastings.findOne(pastTasting2Id);
+  var tasting2 = Tastings.findOne(tasting2Id);
 
-  var nextTasting1Id = Tastings.insert({
-    userId: userIdAllen,
-    host: userAllen.username,
-    submitted: new Date("2015-03-31T23:00:00Z"),
+  var tasting3Id = Tastings.insert({
+    userId: user1._id,
+    host: user1.username,
+    submitted: new Date('2015-03-31T23:00:00Z'),
     commentsCount: 0,
     ratingsCount: 0,
     ratingsTotal: 0,
-    when: new Date("2015-04-01T23:00:00Z"),
+    when: new Date('2015-04-08T23:00:00Z'),
     where: 'Heroes & Legacies',
     bottle: 'Willet Reserve',
     spirit: 'Bourbon',
     teaser: 'In addition to the rye...'
   });
-  var nextTasting1 = Tastings.findOne(nextTasting1Id);
+  var tasting3 = Tastings.findOne(tasting3Id);
 
-  var nextTasting2Id = Tastings.insert({
-    userId: userIdCatherine,
-    host: userCatherine.username,
-    submitted: new Date("2015-03-31T23:00:01Z"),
+  var tasting4Id = Tastings.insert({
+    userId: user4._id,
+    host: user4.username,
+    submitted: new Date('2015-04-08T23:00:01Z'),
     commentsCount: 0,
     ratingsCount: 0,
     ratingsTotal: 0,
-    when: new Date("2015-04-01T23:00:00Z"),
+    when: new Date('2015-04-08T23:00:00Z'),
     where: 'Heroes & Legacies',
     bottle: 'Willet Reserve 12 Year',
     spirit: 'Rye',
     teaser: 'Better than bourbon'
   });
-  var nextTasting2 = Tastings.findOne(nextTasting2Id);
+  var tasting4 = Tastings.findOne(tasting4Id);
 
-  var futureTasting1Id = Tastings.insert({
-    userId: userIdWilliam,
-    host: userWilliam.username,
-    submitted: new Date("2015-04-07T23:00:00Z"),
+  var tasting5Id = Tastings.insert({
+    userId: user3._id,
+    host: user3.username,
+    submitted: new Date('2015-04-14T23:00:00Z'),
     commentsCount: 0,
     ratingsCount: 0,
     ratingsTotal: 0,
-    when: new Date("2015-04-08T23:00:00Z"),
+    when: new Date('2015-04-15T23:00:00Z'),
     where: 'Heroes & Legacies',
     bottle: 'Woodford',
     spirit: 'Bourbon',
     teaser: 'Not too shabby'
   });
-  var futureTasting1 = Tastings.findOne(futureTasting1Id);
+  var tasting5 = Tastings.findOne(tasting5Id);
 
-  var futureTasting2Id = Tastings.insert({
-    userId: userIdWilliam,
-    host: userWilliam.username,
-    submitted: new Date("2015-04-07T23:01:00Z"),
+  var tasting6Id = Tastings.insert({
+    userId: user3._id,
+    host: user3.username,
+    submitted: new Date('2015-04-07T23:01:00Z'),
     commentsCount: 0,
     ratingsCount: 0,
     ratingsTotal: 0,
-    when: new Date("2015-04-08T23:00:00Z"),
+    when: new Date('2015-04-15T23:00:00Z'),
     where: 'Heroes & Legacies',
     bottle: 'Woodford Reserve',
     spirit: 'Bourbon',
     teaser: 'Better than shabby'
   });
-  var futureTasting2 = Tastings.findOne(futureTasting2Id);
+  var tasting6 = Tastings.findOne(tasting6Id);
 }
 
 // create some test ratings for past tasting 1
 if (Ratings.find().count() === 0) {
   Ratings.insert({
-    tastingId: pastTasting1Id,
-    userId: userIdWilliam,
-    submitter: userWilliam.username,
-    submitted: new Date("2015-03-24T23:00:00Z"),
+    tastingId: tasting2._id,
+    userId: user3._id,
+    submitter: user3.username,
+    submitted: new Date('2015-03-24T23:00:00Z'),
     score: 2
   });
 
   Ratings.insert({
-    tastingId: pastTasting1Id,
-    userId: userIdCatherine,
-    submitter: userCatherine.username,
-    submitted: new Date("2015-03-24T23:00:00Z"),
+    tastingId: tasting2._id,
+    userId: user4._id,
+    submitter: user4.username,
+    submitted: new Date('2015-03-24T23:00:00Z'),
     score: 3
+  });
+}
+
+// create some test comments for past tasting 1
+if (Comments.find().count() === 0) {
+  Comments.insert({
+    tastingId: tasting2._id,
+    userId: user3._id,
+    submitter: user3.username,
+    submitted: new Date('2015-03-24T23:00:00Z'),
+    body: 'what does this cost?'
+  });
+
+  Comments.insert({
+    tastingId: tasting2._id,
+    userId: user4._id,
+    submitter: user4.username,
+    submitted: new Date('2015-03-24T23:00:00Z'),
+    body: 'it\'s ok'
   });
 }
