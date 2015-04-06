@@ -46,9 +46,9 @@ if (Tastings.find().count() === 0) {
     _id: user3._id,
     host: user3.username,
     submitted: new Date('2015-03-30T23:00:00Z'),
-    commentsCount: 2,
-    ratingsCount: 0,
-    ratingsTotal: 0,
+    commentsCount: 3,
+    ratingsCount: 2,
+    ratingsTotal: 5,
     when: new Date('2015-04-01T23:00:00Z'),
     where: 'Heroes & Legacies',
     bottle: 'Grey Goose',
@@ -122,8 +122,8 @@ if (Tastings.find().count() === 0) {
 if (Ratings.find().count() === 0) {
   Ratings.insert({
     tastingId: tasting2._id,
-    userId: user3._id,
-    submitter: user3.username,
+    userId: user1._id,
+    submitter: user1.username,
     submitted: new Date('2015-03-24T23:00:00Z'),
     score: 2
   });
@@ -141,10 +141,18 @@ if (Ratings.find().count() === 0) {
 if (Comments.find().count() === 0) {
   Comments.insert({
     tastingId: tasting2._id,
+    userId: user1._id,
+    submitter: user1.username,
+    submitted: new Date('2015-03-24T23:00:00Z'),
+    body: 'what does this cost?'
+  });
+
+  Comments.insert({
+    tastingId: tasting2._id,
     userId: user3._id,
     submitter: user3.username,
     submitted: new Date('2015-03-24T23:00:00Z'),
-    body: 'what does this cost?'
+    body: 'one hundred gazillion dollars'
   });
 
   Comments.insert({
@@ -152,6 +160,6 @@ if (Comments.find().count() === 0) {
     userId: user4._id,
     submitter: user4.username,
     submitted: new Date('2015-03-24T23:00:00Z'),
-    body: 'it\'s ok'
+    body: 'not worth THAT much'
   });
 }
