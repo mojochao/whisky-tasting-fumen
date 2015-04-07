@@ -5,7 +5,7 @@
       {{> tastingItem}}
     {{/each}}
   </div>
-  {{#if noTastings}}
+  {{#unless tastings}}
   <p>No tastings are scheduled for the next week.</p>
   <p>Check out some <a href="{{pathFor 'tastingsFuture'}}">upcoming</a> or <a href="{{pathFor 'tastingsPast'}}">recent</a> tastings.</p>
     {{#if currentUser}}
@@ -13,5 +13,5 @@
     {{else}}
       <p>Sign in or join to schedule a tasting and start sharing with some friends.</p>
     {{/if}}
-  {{/if}}
+  {{/unless}}
 </template>
