@@ -15,11 +15,11 @@
         </p>
         <hr>
         <p>{{commentsCount}} comments</p>
-        <p>{{ratingsCount}} ratings</p>
-        {{#if ratingsCount}}
+        <p>{{ratingsNum}} ratings</p>
+        {{#if ratingsNum}}
         <div class="comment">
           <strong>Average rating</strong>
-          <span class="rateit" data-rateit-value="{{ratingsAverage}}" data-rateit-ispreset="true" data-rateit-readonly="true"></span>
+          <span class="rateit" data-rateit-value="{{ratingsAvg}}" data-rateit-ispreset="true" data-rateit-readonly="true"></span>
         </div>
         {{/if}}
       </div>

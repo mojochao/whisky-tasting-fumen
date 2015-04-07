@@ -1,9 +1,5 @@
 Template.tastingItem.helpers({
 
-  ratingsAverage: function () {
-    return this.ratingsCount === 0 ? null : this.ratingsTotal / this.ratingsCount;
-  },
-
   whenFormatted: whenFormatted
 
 });

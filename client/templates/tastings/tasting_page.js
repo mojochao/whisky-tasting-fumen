@@ -12,10 +12,6 @@ Template.tastingPage.helpers({
     });
   },
 
-  ratingsAverage: function () {
-    return this.ratingsCount === 0 ? null : this.ratingsTotal / this.ratingsCount;
-  },
-
   userRating: function () {
     return Ratings.findOne({
       tastingId: this._id,
