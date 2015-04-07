@@ -1,29 +1,7 @@
 <template name="tastingPage">
   <div class="tasting-page page">
     <h4>Tasting</h4>
-    <div class="tasting">
-      <div class="tasting-content">
-        {{#if isOwner}}
-          <p><a href="{{pathFor 'tastingEdit'}}" class="discuss btn btn-primary">Edit Tasting</a></p>
-        {{/if}}
-        <h4>{{bottle}}</h4>
-        <h3>{{spirit}}</h3>
-        <p>{{teaser}}</p>
-        <hr>
-        <p>
-        Hosted by <strong>{{host}}</strong> on {{whenFormatted}} at {{where}}.
-        </p>
-        <hr>
-        <p>{{commentsCount}} comments</p>
-        <p>{{ratingsNum}} ratings</p>
-        {{#if ratingsNum}}
-        <div class="comment">
-          <strong>Average rating</strong>
-          <span class="rateit" data-rateit-value="{{ratingsAvg}}" data-rateit-ispreset="true" data-rateit-readonly="true"></span>
-        </div>
-        {{/if}}
-      </div>
-    </div>
+    {{> tastingItem}}
 
     <h4>Comments</h4>
     <ul class="comments">

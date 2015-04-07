@@ -17,14 +17,8 @@ Template.tastingPage.helpers({
       tastingId: this._id,
       userId: Meteor.userId()
     });
-  },
-
-  isOwner: function () {
-    return this.userId === Meteor.userId();
-  },
-
-  whenFormatted: whenFormatted
-
+  }
+  
 });
 
 Template.tastingPage.rendered = function () {
