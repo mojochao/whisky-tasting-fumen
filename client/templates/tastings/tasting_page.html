@@ -11,7 +11,11 @@
     </ul>
 
     {{#if currentUser}}
-      {{> commentSubmit}}
+      {{#if tastingInProgress}}
+        {{> commentSubmit}}
+      {{else}}
+        <p>This tasting is not open for comments.</p>
+      {{/if}}
     {{else}}
       <p>Please log in to add a comment.</p>
     {{/if}}
@@ -25,7 +29,11 @@
 
     {{#if currentUser}}
       {{#unless userRating}}
-        {{> ratingSubmit}}
+        {{#if tastingInProgress}}
+          {{> ratingSubmit}}
+        {{else}}
+          <p>This tasting is not open for ratings.</p>
+        {{/if}}
       {{/unless}}
     {{else}}
       <p>Please log in to add a rating.</p>

@@ -17,8 +17,13 @@ Template.tastingPage.helpers({
       tastingId: this._id,
       userId: Meteor.userId()
     });
+  },
+
+  tastingInProgress: function () {
+    var now = new Date();
+    return tastingInProgress(this, now);
   }
-  
+
 });
 
 Template.tastingPage.rendered = function () {
