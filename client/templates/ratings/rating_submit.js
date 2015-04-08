@@ -16,12 +16,12 @@ Template.ratingSubmit.helpers({
 
 Template.ratingSubmit.events({
 
-  'reset form': function (evt, template) {
+  'reset form': function (event, template) {
     $('#score').rateit('value', null);
   },
 
-  'submit form': function (evt, template) {
-    evt.preventDefault();
+  'submit form': function (event, template) {
+    event.preventDefault();
 
     var errors = {};
 
@@ -36,9 +36,9 @@ Template.ratingSubmit.events({
       tastingId: template.data._id
     };
 
-    Meteor.call('ratingInsert', rating, function (err, ratingId) {
-      if (err) {
-        throwError(err.reason);
+    Meteor.call('ratingInsert', rating, function (error, ratingId) {
+      if (error) {
+        throwError(error.reason);
       }
     });
   }

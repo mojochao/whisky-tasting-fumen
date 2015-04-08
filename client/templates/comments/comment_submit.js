@@ -12,10 +12,10 @@ Template.commentSubmit.helpers({
 });
 
 Template.commentSubmit.events({
-  'submit form': function (evt, template) {
-    evt.preventDefault();
+  'submit form': function (event, template) {
+    event.preventDefault();
 
-    var $body = $(evt.target).find('[name=body]');
+    var $body = $(event.target).find('[name=body]');
     var comment = {
       body: $body.val(),
       tastingId: template.data._id
@@ -27,9 +27,9 @@ Template.commentSubmit.events({
       return Session.set('commentSubmitErrors', errors);
     }
 
-    Meteor.call('commentInsert', comment, function (err, commentId) {
-      if (err) {
-        throwError(err.reason);
+    Meteor.call('commentInsert', comment, function (error, commentId) {
+      if (error) {
+        throwError(error.reason);
       } else {
         $body.val('');
       }
