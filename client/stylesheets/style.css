@@ -1,4 +1,4 @@
-.grid-block, .main, .tasting, .comments li, .comment-form {
+.grid-block, .main, .tasting, .comments li, .comment-form, .ratings li, .rating-form {
   background: #fff;
   border-radius: 3px;
   padding: 10px;
@@ -74,7 +74,7 @@ body {
   margin: 0; }
 .tasting .discuss {
   display: block;
-  float: right;
+  float: left;
   margin-top: 7px; }
 
 .comments {
@@ -89,6 +89,21 @@ body {
 .comments li h4 a {
   font-size: 12px; }
 .comments li p:last-child {
+  margin-bottom: 0; }
+
+/* TODO: should use a mixin for ratings and comments both*/
+.ratings {
+  list-style-type: none;
+  margin: 0; }
+.ratings li h4 {
+  font-size: 16px;
+  margin: 0; }
+.ratings li h4 .date {
+  font-size: 12px;
+  font-weight: normal; }
+.ratings li h4 a {
+  font-size: 12px; }
+.ratings li p:last-child {
   margin-bottom: 0; }
 
 .dropdown-menu span {

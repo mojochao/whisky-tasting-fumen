@@ -1,5 +1,5 @@
 Template.errors.helpers({
-  errors: function() {
+  errors: function () {
     return Errors.find();
   }
 });

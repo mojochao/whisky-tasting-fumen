@@ -1,16 +1,16 @@
 <template name="tastingsPast">
-  <h3>Recent Tastings</h3>
+  <h3>Past Tastings</h3>
   <div class="tastings">
     {{#each tastings}}
-      {{> tastingsItem}}
+      {{> tastingItem}}
     {{/each}}
   </div>
-  {{#if noTastings}}
+  {{#unless tastings}}
     <p>No past tastings found.</p>
     {{#if currentUser}}
       <p>Schedule a <a href="{{pathFor 'tastingSubmit'}}">new tasting</a> and start sharing with some friends.</p>
     {{else}}
       <p>Sign in or join to schedule a tasting and start sharing with some friends.</p>
     {{/if}}
-  {{/if}}
+  {{/unless}}
 </template>

@@ -31,12 +31,12 @@ Template.tastingEdit.events({
     if (confirm('Delete this tasting?')) {
       var currentTastingId = this._id;
       Tastings.remove(currentTastingId);
-      Router.go('tastingsList');
+      Router.go('tastingsNext');
     }
   }
 
 });
 
-Template.tastingEdit.rendered = function() {
+Template.tastingEdit.rendered = function () {
   $('.datetimepicker').datetimepicker();
 };

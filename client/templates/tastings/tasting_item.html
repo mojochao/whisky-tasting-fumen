@@ -1,0 +1,20 @@
+<template name="tastingItem">
+  <article class="tasting tastings-item-select">
+    <div class="tasting-content">
+      <h4>{{bottle}}, {{spirit}}</h4>
+      <p>{{teaser}}</p>
+      <hr>
+      <h5>Hosted by <strong>{{host}}</strong> on {{whenFormatted}} at {{where}}</h5>
+      {{#if ratingsNum}}
+      <div class="comment">
+        <strong>Average rating</strong>
+        <span class="rateit" data-rateit-value="{{ratingsAvg}}" data-rateit-ispreset="true" data-rateit-readonly="true"></span>
+      </div>
+      {{/if}}
+      <p>{{commentsCount}} comments, {{ratingsNum}} ratings</p>
+      {{#if isOwner}}
+      <p><a href="{{pathFor 'tastingEdit'}}" class="discuss btn btn-primary">Edit Tasting</a></p>
+      {{/if}}
+    </div>
+  </article>
+</template>

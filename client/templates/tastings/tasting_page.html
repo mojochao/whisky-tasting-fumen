@@ -1,20 +1,7 @@
 <template name="tastingPage">
   <div class="tasting-page page">
     <h4>Tasting</h4>
-    <div class="tasting">
-      <div class="tasting-content">
-        {{#if isOwner}}
-          <p><a href="{{pathFor 'tastingEdit'}}" class="discuss btn btn-primary">Edit Tasting</a></p>
-        {{/if}}
-        <h4>{{bottle}}</h4>
-        <h3>{{spirit}}</h3>
-        <p>{{teaser}}</p>
-        <hr>
-        <p>
-        Hosted by <strong>{{host}}</strong> on {{whenFormatted}} at {{where}}.
-        </p>
-      </div>
-    </div>
+    {{> tastingItem}}
 
     <h4>Comments</h4>
     <ul class="comments">
@@ -24,9 +11,32 @@
     </ul>
 
     {{#if currentUser}}
-      {{> commentSubmit}}
+      {{#if tastingInProgress}}
+        {{> commentSubmit}}
+      {{else}}
+        <p>This tasting is not open for comments.</p>
+      {{/if}}
     {{else}}
-      <p>Please log in to leave a comment.</p>
+      <p>Please log in to add a comment.</p>
+    {{/if}}
+
+    <h4>Ratings</h4>
+    <ul class="ratings">
+      {{#each ratings}}
+        {{> ratingItem}}
+      {{/each}}
+    </ul>
+
+    {{#if currentUser}}
+      {{#unless userRating}}
+        {{#if tastingInProgress}}
+          {{> ratingSubmit}}
+        {{else}}
+          <p>This tasting is not open for ratings.</p>
+        {{/if}}
+      {{/unless}}
+    {{else}}
+      <p>Please log in to add a rating.</p>
     {{/if}}
   </div>
 </template>
