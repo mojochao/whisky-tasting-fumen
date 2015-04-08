@@ -12,7 +12,7 @@
       </div>
       {{/if}}
       <p>{{commentsCount}} comments, {{ratingsNum}} ratings</p>
-      {{#if isOwner}}
+      {{#if isEditable}}
       <p><a href="{{pathFor 'tastingEdit'}}" class="discuss btn btn-primary">Edit Tasting</a></p>
       {{/if}}
     </div>
