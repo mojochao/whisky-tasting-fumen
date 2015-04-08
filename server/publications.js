@@ -4,15 +4,15 @@ Meteor.publish('tastings', function () {
 
 Meteor.publish('tastingsNext', function (today) {
   var week = moment().startOf('day').add(7, 'days').toDate();
-  return Tastings.find({when: {'$gte': today, '$lte': week}});
+  return Tastings.find({when: {'$gte': today, '$lte': week}}, {sort: {when: 1}});
 });
 
 Meteor.publish('tastingsPast', function (today) {
-  return Tastings.find({when: {'$lt': today}});
+  return Tastings.find({when: {'$lt': today}}, {sort: {when: 1}});
 });
 
 Meteor.publish('tastingsFuture', function (today) {
-  return Tastings.find({when: {'$gte': today}});
+  return Tastings.find({when: {'$gte': today}}, {sort: {when: 1}});
 });
 
 Meteor.publish('comments', function (tastingId) {
