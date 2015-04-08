@@ -1,5 +1,9 @@
 Template.tastingItem.helpers({
 
+  isEditable: function () {
+    return this.userId === Meteor.userId && ! tastingHasOpened(this)
+  },
+
   isOwner: function () {
     return this.userId === Meteor.userId();
   },
