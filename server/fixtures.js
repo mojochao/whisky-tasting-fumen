@@ -1,5 +1,5 @@
-// create some test users
-if (Meteor.users.find().count() === 0) {
+// create some test users if in development environment
+if (process.env.NODE_ENV === 'development' && Meteor.users.find().count() === 0) {
   var user1Id = Meteor.users.insert({
     username: 'allen'
   });
