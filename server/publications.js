@@ -1,5 +1,5 @@
-Meteor.publish('tastings', function () {
-  return Tastings.find();
+Meteor.publish('tasting', function (tastingId) {
+  return Tastings.find(tastingId);
 });
 
 Meteor.publish('tastingsNext', function (today) {
