@@ -15,6 +15,14 @@ Meteor.publish('tastingsFuture', function (today) {
   return Tastings.find({when: {'$gte': today}}, {sort: {when: 1}});
 });
 
+Meteor.publish('tastingsBest', function () {
+  return Tastings.find({}, {sort: {ratingsAvg: 1}});
+});
+
+Meteor.publish('tastingsWorst', function () {
+  return Tastings.find({}, {sort: {ratingsAvg: 1}});
+});
+
 Meteor.publish('comments', function (tastingId) {
   check(tastingId, String);
   return Comments.find({tastingId: tastingId});
