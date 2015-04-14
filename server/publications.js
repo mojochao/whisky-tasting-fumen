@@ -13,7 +13,7 @@ Meteor.publish('tastingsNext', function (today, limit) {
 Meteor.publish('tastingsPast', function (today, limit) {
   check(today, Date);
   check(limit, Number);
-  return Tastings.find({when: {'$lt': today}}, {sort: {when: 1}, limit: limit});
+  return Tastings.find({when: {'$lt': today}}, {sort: {when: -1}, limit: limit});
 });
 
 Meteor.publish('tastingsFuture', function (today, limit) {
