@@ -134,6 +134,41 @@ if (Tastings.find().count() === 0) {
     ratingsAvg: null
   });
   var tasting6 = Tastings.findOne(tasting6Id);
+
+  for (var i = 0; i < 13; i++) {
+    Tastings.insert({
+      userId: user1._id,
+      host: user1.username,
+      submitted: new Date('2015-04-07T23:01:00Z'),
+      when: new Date('2015-04-01T23:00:00Z'),
+      where: 'Heroes & Legacies',
+      bottle: 'Jim Beam Past',
+      spirit: 'Bourbon',
+      teaser: 'Rotgut',
+      commentsCount: 0,
+      ratingsNum: 0,
+      ratingsSum: 0,
+      ratingsMin: 0,
+      ratingsMax: 0,
+      ratingsAvg: null
+    });
+    Tastings.insert({
+      userId: user1._id,
+      host: user1.username,
+      submitted: new Date('2015-04-07T23:01:00Z'),
+      when: new Date('2015-04-28T23:00:00Z'),
+      where: 'Heroes & Legacies',
+      bottle: 'Jim Beam Future',
+      spirit: 'Bourbon',
+      teaser: 'Rotgut',
+      commentsCount: 0,
+      ratingsNum: 0,
+      ratingsSum: 0,
+      ratingsMin: 0,
+      ratingsMax: 0,
+      ratingsAvg: null
+    });
+  }
 }
 
 // create some test ratings for past tasting 1
