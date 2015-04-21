@@ -1,0 +1,19 @@
+{
+  "servers": [
+    {
+      "host": "104.236.51.220",
+      "username": "root",
+      "pem": "~/.ssh/id_rsa"
+    }
+  ],
+  "setupMongo": true,
+  "setupNode": true,
+  "nodeVersion": "0.10.36",
+  "setupPhantom": true,
+  "appName": "wtf",
+  "app": ".",
+  "env": {
+    "ROOT_URL": "http://wtf.fumensurate.com"
+  },
+  "deployCheckWaitTime": 15
+}
