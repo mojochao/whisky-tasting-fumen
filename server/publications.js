@@ -3,13 +3,6 @@ Meteor.publish('tasting', function (tastingId) {
   return Tastings.find(tastingId);
 });
 
-Meteor.publish('tastingsNext', function (today, limit) {
-  check(today, Date);
-  check(limit, Number);
-  var week = moment().startOf('day').add(7, 'days').toDate();
-  return Tastings.find({when: {'$gte': today, '$lte': week}}, {sort: {when: 1}, limit: limit});
-});
-
 Meteor.publish('tastingsPast', function (today, limit) {
   check(today, Date);
   check(limit, Number);

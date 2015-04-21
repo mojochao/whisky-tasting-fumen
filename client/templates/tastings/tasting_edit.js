@@ -31,7 +31,7 @@ Template.tastingEdit.events({
     if (confirm('Delete this tasting?')) {
       var currentTastingId = this._id;
       Tastings.remove(currentTastingId);
-      Router.go('tastingsNext');
+      Router.go('tastingsFuture');
     }
   }
 
