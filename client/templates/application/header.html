@@ -12,20 +12,20 @@
       </div>
       <div class="collapse navbar-collapse" id="navigation">
         <ul class="nav navbar-nav">
-          <li>
+          <li class="{{activeRouteClass 'tastingsNext'}}">
             <a href="{{pathFor 'tastingsNext'}}">Next</a>
           </li>
-          <li>
+          <li class="{{activeRouteClass 'tastingsLast'}}">
             <a href="{{pathFor 'tastingsLast'}}">Last</a>
           </li>
-          <li>
+          <li class="{{activeRouteClass 'tastingsBest'}}">
             <a href="{{pathFor 'tastingsBest'}}">Best</a>
           </li>
-          <li>
+          <li class="{{activeRouteClass 'tastingsWorst'}}">
             <a href="{{pathFor 'tastingsWorst'}}">Worst</a>
           </li>
           {{#if currentUser}}
-          <li>
+          <li class="{{activeRouteClass 'tastingSubmit'}}">
             <a href="{{pathFor 'tastingSubmit'}}">Create</a>
           </li>
           <li class="dropdown">
