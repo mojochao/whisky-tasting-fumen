@@ -3,16 +3,16 @@ Meteor.publish('tasting', function (tastingId) {
   return Tastings.find(tastingId);
 });
 
-Meteor.publish('tastingsPast', function (today, limit) {
-  check(today, Date);
-  check(limit, Number);
-  return Tastings.find({when: {'$lt': today}}, {sort: {when: -1}, limit: limit});
-});
-
-Meteor.publish('tastingsFuture', function (today, limit) {
+Meteor.publish('tastingsNext', function (today, limit) {
   check(today, Date);
   check(limit, Number);
   return Tastings.find({when: {'$gte': today}}, {sort: {when: 1}, limit: limit});
+});
+
+Meteor.publish('tastingsLast', function (today, limit) {
+  check(today, Date);
+  check(limit, Number);
+  return Tastings.find({when: {'$lt': today}}, {sort: {when: -1}, limit: limit});
 });
 
 Meteor.publish('tastingsRated', function (limit) {

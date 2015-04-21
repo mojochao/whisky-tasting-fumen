@@ -144,7 +144,7 @@ if (process.env.USE_FIXTURES) {
         submitted: new Date('2015-04-07T23:01:00Z'),
         when: new Date('2015-04-01T23:00:00Z'),
         where: 'Heroes & Legacies',
-        bottle: 'Jim Beam Past',
+        bottle: 'Jim Beam Last',
         spirit: 'Bourbon',
         teaser: 'Rotgut',
         commentsCount: 0,
@@ -160,7 +160,7 @@ if (process.env.USE_FIXTURES) {
         submitted: new Date('2015-04-07T23:01:00Z'),
         when: new Date('2015-04-28T23:00:00Z'),
         where: 'Heroes & Legacies',
-        bottle: 'Jim Beam Future',
+        bottle: 'Jim Beam Next',
         spirit: 'Bourbon',
         teaser: 'Rotgut',
         commentsCount: 0,
@@ -173,7 +173,7 @@ if (process.env.USE_FIXTURES) {
     }
   }
 
-// create some test ratings for past tasting 1
+// create some test ratings for last tasting 1
   if (Ratings.find().count() === 0) {
     Ratings.insert({
       tastingId: tasting1._id,
@@ -216,7 +216,7 @@ if (process.env.USE_FIXTURES) {
     });
   }
 
-// create some test comments for past tasting 1
+// create some test comments for last tasting 1
   if (Comments.find().count() === 0) {
     Comments.insert({
       tastingId: tasting2._id,

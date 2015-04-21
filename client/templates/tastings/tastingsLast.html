@@ -1,5 +1,5 @@
-<template name="tastingsPast">
-  <h3>Past Tastings</h3>
+<template name="tastingsLast">
+  <h3>Last Tastings</h3>
   <div class="tastings">
     {{#each tastings}}
       {{> tastingItem}}
@@ -14,7 +14,7 @@
     {{/if}}
   </div>
   {{#unless tastings}}
-    <p>No past tastings found.</p>
+    <p>No tastings found.</p>
     {{#if currentUser}}
       <p>Schedule a <a href="{{pathFor 'tastingSubmit'}}">new tasting</a> and start sharing with some friends.</p>
     {{else}}

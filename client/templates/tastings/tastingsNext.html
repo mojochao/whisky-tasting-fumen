@@ -1,5 +1,5 @@
-<template name="tastingsFuture">
-  <h3>Future Tastings</h3>
+<template name="tastingsNext">
+  <h3>Next Tastings</h3>
   <div class="tastings">
     {{#each tastings}}
       {{> tastingItem}}
@@ -14,7 +14,7 @@
     {{/if}}
   </div>
   {{#unless tastings}}
-    <p>No future tastings are scheduled.</p>
+    <p>No tastings are scheduled.</p>
     {{#if currentUser}}
       <p>Schedule a <a href="{{pathFor 'tastingSubmit'}}">new tasting</a> and share with some friends.</p>
     {{else}}
