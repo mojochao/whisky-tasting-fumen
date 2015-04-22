@@ -12,12 +12,14 @@
       {{/unless}}
     {{/if}}
   </div>
-  {{#unless tastings}}
+  <div class="container">
+  {{#if noneAvailable}}
   <p>No tastings have been rated.</p>
   {{#if currentUser}}
   <p>Schedule a <a href="{{pathFor 'tastingSubmit'}}">new tasting</a> and share with some friends.</p>
   {{else}}
   <p>Sign in or join to schedule a tasting and start sharing with some friends.</p>
   {{/if}}
-  {{/unless}}
+  {{/if}}
+  </div>
 </template>
