@@ -14,11 +14,11 @@
   </div>
   <div class="container">
     {{#if noneAvailable}}
-    <p>No tastings are scheduled.</p>
+    <p>No future tastings found.</p>
     {{#if currentUser}}
     <p>Schedule a <a href="{{pathFor 'tastingSubmit'}}">new tasting</a> and share with some friends.</p>
     {{else}}
-    <p>Sign in or join to schedule a tasting and start sharing with some friends.</p>
+    <p>Sign in to schedule a tasting and start sharing with some friends.</p>
     {{/if}}
     {{/if}}
   </div>
