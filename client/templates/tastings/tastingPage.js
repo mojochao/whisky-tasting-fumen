@@ -38,7 +38,9 @@ Template.tastingPage.helpers({
   tastingInProgress: function () {
     var now = new Date();
     return tastingInProgress(this, now);
-  }
+  },
+
+  whenFormatted: whenFormatted
 
 });
 
