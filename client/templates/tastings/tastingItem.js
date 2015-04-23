@@ -8,6 +8,18 @@ Template.tastingItem.helpers({
     return this.userId === Meteor.userId();
   },
 
+  commentsText: function () {
+    var count = this.commentsCount;
+    var label = count.toString();
+    return count === 1 ? label + ' comment' : label + ' comments';
+  },
+
+  ratingsText: function () {
+    var count = this.ratingsNum;
+    var label = count.toString();
+    return count === 1 ? label + ' rating' : label + ' ratings';
+  },
+
   whenFormatted: whenFormatted
 
 });

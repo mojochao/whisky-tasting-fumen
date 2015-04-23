@@ -11,7 +11,7 @@
         <span class="rateit" data-rateit-value="{{ratingsAvg}}" data-rateit-ispreset="true" data-rateit-readonly="true"></span>
       </div>
       {{/if}}
-      <p>{{commentsCount}} comments, {{ratingsNum}} ratings</p>
+      <p>{{commentsText}}, {{ratingsText}}</p>
       {{#if isOwner}}
       <p><a href="{{pathFor 'tastingEdit'}}" class="discuss btn btn-primary">Edit Tasting</a></p>
       {{/if}}

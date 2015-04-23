@@ -12,10 +12,22 @@ Template.tastingPage.helpers({
     });
   },
 
+  commentsText: function () {
+    var count = this.commentsCount;
+    var label = count.toString();
+    return count === 1 ? label + ' comment' : label + ' comments';
+  },
+
+  ratingsText: function () {
+    var count = this.ratingsNum;
+    var label = count.toString();
+    return count === 1 ? label + ' rating' : label + ' ratings';
+  },
+
   isOwner: function () {
     return this.userId === Meteor.userId();
   },
-  
+
   userRating: function () {
     return Ratings.findOne({
       tastingId: this._id,
