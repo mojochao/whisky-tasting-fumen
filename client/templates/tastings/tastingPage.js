@@ -12,6 +12,10 @@ Template.tastingPage.helpers({
     });
   },
 
+  isOwner: function () {
+    return this.userId === Meteor.userId();
+  },
+  
   userRating: function () {
     return Ratings.findOne({
       tastingId: this._id,

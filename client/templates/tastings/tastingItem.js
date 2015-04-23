@@ -4,8 +4,8 @@ Template.tastingItem.helpers({
     return this.teaser.length <= 120 ? this.teaser : this.teaser.replace(/^(.{120}[^\s]*).*/, "$1") + ' ....';
   },
 
-  isEditable: function () {
-    return this.userId === Meteor.userId() && !tastingHasOpened(this)
+  isOwner: function () {
+    return this.userId === Meteor.userId();
   },
 
   whenFormatted: whenFormatted

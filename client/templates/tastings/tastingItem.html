@@ -12,7 +12,9 @@
       </div>
       {{/if}}
       <p>{{commentsCount}} comments, {{ratingsNum}} ratings</p>
+      {{#if isOwner}}
       <p><a href="{{pathFor 'tastingEdit'}}" class="discuss btn btn-primary">Edit Tasting</a></p>
+      {{/if}}
     </div>
   </article>
 </template>
