@@ -3,25 +3,45 @@ if (process.env.USE_FIXTURES) {
 
   if (Meteor.users.find().count() === 0) {
     var user1Id = Meteor.users.insert({
-      username: 'allen'
+      username: 'allen',
+      email: 'allen@nonesuch.com',
+      profile: {
+        first_name: 'Allen',
+        last_name: 'Doe'
+      }
     });
     Accounts.setPassword(user1Id, 'password')
     var user1 = Meteor.users.findOne(user1Id);
 
     var user2Id = Meteor.users.insert({
-      username: 'danielle'
+      username: 'danielle',
+      email: 'danielle@nonesuch.com',
+      profile: {
+        first_name: 'Danielle',
+        last_name: 'Doe'
+      }
     });
     Accounts.setPassword(user2Id, 'password')
     var user2 = Meteor.users.findOne(user2Id);
 
     var user3Id = Meteor.users.insert({
-      username: 'william'
+      username: 'william',
+      email: 'william@nonesuch.com',
+      profile: {
+        first_name: 'William',
+        last_name: 'Doe'
+      }
     });
     Accounts.setPassword(user3Id, 'password')
     var user3 = Meteor.users.findOne(user3Id);
 
     var user4Id = Meteor.users.insert({
-      username: 'catherine'
+      username: 'catherine',
+      email: 'catherine@nonesuch.com',
+      profile: {
+        first_name: 'Catherine',
+        last_name: 'Doe'
+      }
     });
     Accounts.setPassword(user4Id, 'password')
     var user4 = Meteor.users.findOne(user4Id);
